@@ -1,0 +1,13 @@
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\bin\Debug\netstandard2.0\AppDAEMovil.deps.json
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\bin\Debug\netstandard2.0\AppDAEMovil.dll
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\bin\Debug\netstandard2.0\AppDAEMovil.pdb
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\obj\Debug\netstandard2.0\AppDAEMovil.csprojAssemblyReference.cache
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\obj\Debug\netstandard2.0\Views\Inventarios\FicViReporteAcumuladosLista.xaml.g.cs
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\obj\Debug\netstandard2.0\Views\Inventarios\MiPaginaContenido.xaml.g.cs
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\obj\Debug\netstandard2.0\AppDAEMovil.AssemblyInfoInputs.cache
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\obj\Debug\netstandard2.0\AppDAEMovil.AssemblyInfo.cs
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\obj\Debug\netstandard2.0\AppDAEMovil.dll
+C:\Users\dokxo\Documents\Ago-Dic2019\Empresariales\AppDAEMovil\AppDAEMovil\AppDAEMovil\obj\Debug\netstandard2.0\AppDAEMovil.pdb

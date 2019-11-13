@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDAEMovil.Views.Inventarios.FicViReporteAcumuladosLista"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             
+             >
+    <ContentPage.Content>
+     
+            <StackLayout Orientation="Vertical" BackgroundColor="Black">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Reporte de Acumulados"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="White"
+                    FontSize="Large"
+                    VerticalTextAlignment="Center"
+                    
+                    
+                           />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Id Inventario: " TextColor="White" 
+                           FontSize="Medium"/>
+                    <Entry WidthRequest="100" TextColor="White" BackgroundColor="Black" FontSize="Medium"></Entry>
+                </StackLayout>
+
+                <!--Clicked="Button_Clicked"-->
+                <StackLayout Orientation="Horizontal">
+                <Button
+                       
+                        HorizontalOptions="CenterAndExpand"
+                        BackgroundColor="DarkGreen"
+                        TextColor="White"
+                        Text="Consultar"/>
+                    <Button
+                        HorizontalOptions="CenterAndExpand"
+                        BackgroundColor="DarkRed"
+                        TextColor="White"
+                        Text="Cancelar"/>
+            </StackLayout>
+
+
+
+                <!--GridDoubleTappedCommand="{Binding DoubleTappedCommandAction}"
+                SelectedItem="{Binding FicSfDataGrid_SelectItem_Acumulado}"-->
+                <StackLayout Orientation="Horizontal">
+                    <syncfusion:SfDataGrid
+                                x:Name="FicGridRepoAcumuladoList"
+                                VerticalOptions="FillAndExpand"
+                                ColumnSizer="Star"
+                                AutoGenerateColumns="False"
+                                AllowSorting="False"
+                                ItemsSource= "{Binding FicSfDataGrid_ItemSource_Acumulado}"
+                                SelectionMode="Single"
+                                BackgroundColor="Black"
+                                
+                         
+                                
+                                >
+                        <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns" >
+                            <syncfusion:GridTextColumn  HeaderFontAttribute="Bold" HeaderText="SKU" 
+                                        MappingName="IdSKU" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="* Nombre *" 
+                                        MappingName="DesSKU" ColumnSizer="LastColumnFill" MinimumWidth="15" CellTextSize="10"  />
+                            <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="Teorica" 
+                                        MappingName="CantidadTeorica" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="TeoCJA" 
+                                        MappingName="CantidadTeoricaCJA" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="R" 
+                                        MappingName="Reconteo" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="Fisica" 
+                                        MappingName="CantidadFisica" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="Dif" 
+                                        MappingName="Diferencia" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="Med" 
+                                        MappingName="IdUnidadMedida" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="Usr" 
+                                        MappingName="UsuarioReg" ColumnSizer="None" MinimumWidth="5" CellTextSize="10"/>
+                        </syncfusion:SfDataGrid.Columns>
+                    </syncfusion:SfDataGrid>
+                </StackLayout>
+            </StackLayout>
+
+        
+
+    
+        
+    </ContentPage.Content>
+</ContentPage>
