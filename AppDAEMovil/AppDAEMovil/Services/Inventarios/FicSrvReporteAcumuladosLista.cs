@@ -37,6 +37,9 @@ namespace AppDAEMovil.Services.Inventarios
             }
         }
 
-
+        public Task<List<zt_cat_productos>> FicIMetGetListaSKULo(int FicPaIdInventario)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

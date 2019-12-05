@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppDAEMovil.ViewModels.Inventarios;
+using Syncfusion.SfDataGrid.XForms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,13 +17,37 @@ namespace AppDAEMovil.Views.Inventarios
         public FicViCatalogoSkuLista()
         {
             InitializeComponent();
+            BindingContext = App.FicViewModelDependencyInjection.FicVmCatalogoSkuLista;
 
            
         }
 
-        private void FicSearchBar_SearchButtonPressed(object sender, EventArgs e)
+        private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
         {
+            try
+            {
+                if (e.ColumnIndex == 4 && e.CellValue == null)
+                {
+                    e.Style.BackgroundColor = Color.IndianRed;
+                    e.Style.ForegroundColor = Color.White;
+                }
+                else if (e.ColumnIndex == 4 && int.Parse(e.CellValue.ToString()) >= 0)
+                {
+                    e.Style.BackgroundColor = Color.YellowGreen;
+                    e.Style.ForegroundColor = Color.White;
+                }
 
+                e.Handled = true;
+            }
+            catch
+            {
+                if (e.ColumnIndex == 4)
+                {
+                    e.Style.BackgroundColor = Color.IndianRed;
+                    e.Style.ForegroundColor = Color.White;
+                    e.Handled = true;
+                }
+            }
         }
     }
 }

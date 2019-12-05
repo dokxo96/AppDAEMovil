@@ -14,6 +14,9 @@ namespace AppDAEMovil.ViewModels.Base
         public FicViewModelDependencyInjection()
         {
             var FicContainerBuilder = new ContainerBuilder();
+            FicContainerBuilder.RegisterType<FicVmCatalogoSkuLista>();
+            FicContainerBuilder.RegisterType<FicSrvInventarioSKUList>().As<FicInterfaceSKULista>().SingleInstance();
+
             FicContainerBuilder.RegisterType<FicVmReporteAcumuladosLista>();
             FicContainerBuilder.RegisterType<FicSrvReporteAcumuladosLista>().As <FicInterFaceReporteAcumuladosLista>().SingleInstance();
             
@@ -23,6 +26,7 @@ namespace AppDAEMovil.ViewModels.Base
         }
         public FicVmReporteAcumuladosLista FicVmReporteAcumuladosLista { get { return FicIContainer.Resolve<FicVmReporteAcumuladosLista>(); } }
 
-        
+        public FicVmCatalogoSkuLista FicVmCatalogoSkuLista { get { return FicIContainer.Resolve<FicVmCatalogoSkuLista>(); } }
+
     }//CLASS
 }//NAMESPACE

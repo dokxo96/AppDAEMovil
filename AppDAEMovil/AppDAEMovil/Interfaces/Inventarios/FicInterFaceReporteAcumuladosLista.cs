@@ -7,6 +7,6 @@ namespace AppDAEMovil.Interfaces.Inventarios
 {
     public interface FicInterFaceReporteAcumuladosLista
     {
-        Task<List<zt_inventarios_acumulados>>FicIMetGetListaAcumuladosWebApi(int FicPaIdInventario);
+        Task<List<zt_inventarios_acumulados>> FicIMetGetListaAcumuladosWebApi(int FicPaIdInventario);
     }
 }

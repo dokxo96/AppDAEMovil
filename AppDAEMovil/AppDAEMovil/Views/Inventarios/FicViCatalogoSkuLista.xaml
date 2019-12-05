@@ -41,6 +41,31 @@
 
                 </StackLayout>
 
+                <syncfusion:SfDataGrid
+                        x:Name="FicGridAcuList"
+                        VerticalOptions="FillAndExpand"
+                        ColumnSizer="Star"
+                        AutoGenerateColumns="False"
+                        AllowSorting="False"
+                        ItemsSource= "{Binding FicSfDataGrid_ItemSource_Acumulado}"
+                        SelectedItem="{Binding FicSfDataGrid_SelectItem_Acumulado}"
+                        SelectionMode="Single"
+                    >
+                    <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="SKU" MappingName="IdSKU" />
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="Codigo Barra" MappingName="CodigoBarras" />
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="DesSKU" MappingName="DesSKU" />
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="IdGrupoSKU" MappingName="IdGrupoSKU" />
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="IdUMedidaBase" MappingName="IdUMedidaBase" />
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="FechaReg" MappingName="FechaReg" />
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="UsuarioReg" MappingName="UsuarioReg" />
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="FechaUltMod" MappingName="FechaUltMod" />
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="UsuarioMod" MappingName="UsuarioMod" />
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="Activo" MappingName="Activo" />
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="Borrado" MappingName="Borrado" />
+                        </syncfusion:SfDataGrid.Columns>
+                </syncfusion:SfDataGrid>
+
             </StackLayout>
 
 

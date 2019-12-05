@@ -15,6 +15,8 @@ namespace AppDAEMovil.Data
         public DbSet<zt_inventarios_acumulados> zt_inventarios_acumulados { get; set; }
         public DbSet<zt_inventarios_conteos> zt_inventarios_conteos { get; set; }
 
+        public DbSet<zt_cat_productos> zt_cat_productos { get; set; }
+
         public FicDBContext(string FicPaDataBasePath)
         {
             this.FicLoDataBasePath = FicPaDataBasePath;
@@ -52,6 +54,9 @@ namespace AppDAEMovil.Data
 
 
                 modelBuilder.Entity<zt_inventarios_acumulados>();
+
+                modelBuilder.Entity<zt_cat_productos>()
+                     .HasKey(c => new { c.idSKU });
 
                 #endregion
             }
