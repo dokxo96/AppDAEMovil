@@ -13269,7 +13269,6 @@
       "path": "microsoft.netcore.targets/1.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -13568,7 +13567,7 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -18146,7 +18145,6 @@
       "path": "system.diagnostics.contracts/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -18958,7 +18956,7 @@
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.0.1": {
-      "sha512": "w4Gc06WPYJ/1eWUlNvn0FEgcqk2efcJ34NPIyP6OD/kIBvqU98ZDbUr4U8b8zSbVr1fwpJxbrO704NqqOeJncw==",
+      "sha512": "Ov6dU8Bu15Bc7zuqttgHF12J5lwSWyTf1S+FJouUXVMSqImLZzYaQ+vRr1rQ0OZ0HqsrwWl4dsKHELckQkVpgA==",
       "type": "package",
       "path": "system.reflection.emit.ilgeneration/4.0.1",
       "files": [
@@ -18991,7 +18989,7 @@
       ]
     },
     "System.Reflection.Emit.Lightweight/4.0.1": {
-      "sha512": "VChj+ghaMXBbCylLZHRMEWF6CYvq5NVmS+tTGJFI0ZJGyaES3jDy1ZfgiIBppBTyrtjpSis2kpSoGyS5kbwhSQ==",
+      "sha512": "sSzHHXueZ5Uh0OLpUQprhr+ZYJrLPA2Cmr4gn0wj9+FftNKXx8RIMKvO9qnjk2ebPYUjZ+F2ulGdPOsvj+MEjA==",
       "type": "package",
       "path": "system.reflection.emit.lightweight/4.0.1",
       "files": [
@@ -19580,7 +19578,6 @@
       "path": "system.runtime.interopservices.runtimeinformation/4.0.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -19876,7 +19873,6 @@
       "path": "system.threading.overlapped/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net46/System.Threading.Overlapped.dll",
@@ -19998,11 +19994,13 @@
         "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid10/FormsViewGroup.dll",
+        "lib/MonoAndroid10/FormsViewGroup.dll.mdb",
         "lib/MonoAndroid10/FormsViewGroup.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
@@ -20128,18 +20126,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dokxo\\.nuget\\packages\\": {},
+    "C:\\Users\\Asus X512D\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj",
+      "projectUniqueName": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj",
       "projectName": "AppDAEMovil.UWP",
-      "projectPath": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj",
-      "packagesPath": "C:\\Users\\dokxo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.UWP\\obj\\",
+      "projectPath": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj",
+      "packagesPath": "C:\\Users\\Asus X512D\\.nuget\\packages\\",
+      "outputPath": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -20147,7 +20145,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\dokxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus X512D\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -20161,8 +20159,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj": {
-              "projectPath": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj"
+            "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj": {
+              "projectPath": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj"
             }
           }
         }

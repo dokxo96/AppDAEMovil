@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj": {}
+    "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj": {
+    "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj",
+        "projectUniqueName": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj",
         "projectName": "AppDAEMovil.UWP",
-        "projectPath": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj",
-        "packagesPath": "C:\\Users\\dokxo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.UWP\\obj\\",
+        "projectPath": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil.UWP\\AppDAEMovil.UWP.csproj",
+        "packagesPath": "C:\\Users\\Asus X512D\\.nuget\\packages\\",
+        "outputPath": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\dokxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus X512D\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -33,8 +33,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj": {
-                "projectPath": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj"
+              "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj": {
+                "projectPath": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj"
               }
             }
           }
@@ -83,21 +83,20 @@
         }
       }
     },
-    "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj": {
+    "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj",
+        "projectUniqueName": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj",
         "projectName": "AppDAEMovil",
-        "projectPath": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj",
-        "packagesPath": "C:\\Users\\dokxo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil\\obj\\",
+        "projectPath": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj",
+        "packagesPath": "C:\\Users\\Asus X512D\\.nuget\\packages\\",
+        "outputPath": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\dokxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus X512D\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

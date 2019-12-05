@@ -2531,7 +2531,6 @@
       "path": "system.runtime.interopservices.runtimeinformation/4.0.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2863,11 +2862,13 @@
         "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid10/FormsViewGroup.dll",
+        "lib/MonoAndroid10/FormsViewGroup.dll.mdb",
         "lib/MonoAndroid10/FormsViewGroup.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
@@ -2997,24 +2998,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dokxo\\.nuget\\packages\\": {},
+    "C:\\Users\\Asus X512D\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.Android\\AppDAEMovil.Android.csproj",
+      "projectUniqueName": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil.Android\\AppDAEMovil.Android.csproj",
       "projectName": "AppDAEMovil.Android",
-      "projectPath": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.Android\\AppDAEMovil.Android.csproj",
-      "packagesPath": "C:\\Users\\dokxo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.Android\\obj\\",
+      "projectPath": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil.Android\\AppDAEMovil.Android.csproj",
+      "packagesPath": "C:\\Users\\Asus X512D\\.nuget\\packages\\",
+      "outputPath": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\dokxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus X512D\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -3028,8 +3029,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj": {
-              "projectPath": "C:\\Users\\dokxo\\Documents\\Ago-Dic2019\\Empresariales\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj"
+            "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj": {
+              "projectPath": "D:\\DAE\\AppDAEREST\\AppDAEMOVIL\\AppDAEMovil\\AppDAEMovil\\AppDAEMovil.csproj"
             }
           }
         }

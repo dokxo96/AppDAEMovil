@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             x:Class="AppDAEMovil.Views.Inventarios.FicViCatalogoUnidadesMedidaLista">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="#212121">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Lista de Catalogo de Unidades Medida"
+                               VerticalOptions="CenterAndExpand" 
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="White"
+                               FontSize="Medium"
+                    />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="IDUnidadMedida:" 
+                           TextColor="White"
+                           HorizontalOptions="Center"  
+                    />
+                <Entry x:Name="FicEntry_IdUnidades"
+                           WidthRequest="600"
+                           BackgroundColor="#484848"
+                           TextColor="White"
+                       HorizontalOptions="Center"
+                    />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button x:Name="FicButton_ConsultarUnidadMed" 
+                                 Text="Consultar"
+                                 FontAttributes="Bold"
+                                 WidthRequest="100"
+                                 HeightRequest="35"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 BackgroundColor="#1b5e20"
+                                 TextColor="White"
+                                 
+                     />
+
+                <Button x:Name="FicButton_CancelarUnidadMed" 
+                                 Text="Cancelar"   
+                                 FontAttributes="Bold"
+                                 WidthRequest="100"
+                                 HeightRequest="35"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 BackgroundColor="#9b0000"
+                                 TextColor="White"
+                                 
+                    />
+            </StackLayout>
+
+
+            <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="Center"  >
+
+                <syncfusion:SfDataGrid
+                                    x:Name="FicGridIDUnidadMedList"
+                                    VerticalOptions="Center"
+                                    ColumnSizer="Star"
+                                    AutoGenerateColumns="True"
+                                    AllowSorting="False"
+                                    
+                                    SelectionMode="Single"
+                                    BackgroundColor="CornflowerBlue"
+                                                                
+                                  
+                                    >
+
+                    <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns" >
+
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="IdSKU" MappingName="IdSKU" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="C_Teorica" MappingName="CantidadTeorica" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="C_TeoCJA"  MappingName="CantidadTeoricaCJA" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="R"  MappingName="Reconteo" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="C_Fisica"  MappingName="CantidadFisica" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="Dif" MappingName="Diferencia" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="Med" MappingName="IdUnidadMedida" ColumnSizer="SizeToHeader" CellTextSize="10"/>
+                        <syncfusion:GridTextColumn HeaderFontAttribute="Bold" HeaderText="Usr" MappingName="UsuarioReg" ColumnSizer="None" MinimumWidth="5" CellTextSize="10"/>
+                    </syncfusion:SfDataGrid.Columns>
+
+                </syncfusion:SfDataGrid>
+                <!--</StackLayout>-->
+            </Grid>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

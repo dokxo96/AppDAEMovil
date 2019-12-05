@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             xmlns:gradient ="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+             
+             x:Class="AppDAEMovil.Views.Inventarios.FicViCatalogoSkuLista">
+   
+
+<ContentPage.Content>
+
+
+        <Grid>
+            <gradient:SfGradientView>
+                <gradient:SfGradientView.BackgroundBrush>
+                    <gradient:SfLinearGradientBrush>
+                        <gradient:SfLinearGradientBrush.GradientStops>
+                            <gradient:SfGradientStop Color="#8E0E00" Offset="0.0" />
+                            <gradient:SfGradientStop Color="#1F1C18" Offset="1.0" />
+                        </gradient:SfLinearGradientBrush.GradientStops>
+                    </gradient:SfLinearGradientBrush>
+                </gradient:SfGradientView.BackgroundBrush>
+            </gradient:SfGradientView>
+            <StackLayout  Orientation="Vertical" VerticalOptions="Start" HorizontalOptions="Center">
+                <Label Text="Listado de Catalogo de SKU's" TextColor="White" FontSize="Title"
+                       
+                />
+
+
+                <StackLayout Orientation="Horizontal">
+                    <SearchBar
+                        HorizontalOptions="FillAndExpand"
+                        Placeholder="Filtrar SKU_list"
+                        PlaceholderColor="Red"
+                        x:Name="FicSearchBar"
+                       
+                    />
+
+                </StackLayout>
+
+            </StackLayout>
+
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
