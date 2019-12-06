@@ -20,7 +20,7 @@ namespace AppDAEMovil.Services.Inventarios
         public FicSrvInventarioSKUList() {
             FicLocalDBContext = new FicDBContext(DependencyService.Get<IFicDataBasePathSQLite>().FicGetDataBasePath());
         }//contructor
-        public async Task<IList<zt_cat_productos>> FicMetGetSKUList(int FicPaIdInventario)
+        public async Task<IList<zt_cat_productos>> FicMetGetSKUList()
         {
             return await (from conteo in FicLocalDBContext.zt_cat_productos
                              select conteo).AsNoTracking().ToListAsync();

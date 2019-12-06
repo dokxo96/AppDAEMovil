@@ -55,6 +55,7 @@ namespace AppDAEMovil.Data
 
                 modelBuilder.Entity<zt_inventarios_acumulados>();
 
+              
                 modelBuilder.Entity<zt_cat_productos>()
                      .HasKey(c => new { c.idSKU });
 

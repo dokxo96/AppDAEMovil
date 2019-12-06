@@ -20,7 +20,6 @@ namespace AppDAEMovil.ViewModels.Inventarios
 
         private ObservableCollection<zt_cat_productos> _FicSfDataGrid_ItemSource_Acumulado;
         private zt_cat_productos _FicSfDataGrid_SelectItem_Acumulado;
-        public event PropertyChangedEventHandler PropertyChanged;
         private string _FicPickerFiltroSelected;
 
         public string FicPickerFiltroSelected
@@ -66,12 +65,7 @@ namespace AppDAEMovil.ViewModels.Inventarios
         }
 
        
-        public void RaisePropertyChanged([CallerMemberName]string propertyName = "")
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new PropertyChangedEventArgs(propertyName));
-        }
+     
 
         public async void OnAppearing()
         {
@@ -81,7 +75,7 @@ namespace AppDAEMovil.ViewModels.Inventarios
 
                 _FicSfDataGrid_ItemSource_Acumulado = new ObservableCollection<zt_cat_productos>();
 
-                foreach (zt_cat_productos au in await FicInterfaceSKULista.FicMetGetSKUList(FicSourceZt_Inventarios.idSKU))
+                foreach (zt_cat_productos au in await FicInterfaceSKULista.FicMetGetSKUList())
                 {
                     _FicSfDataGrid_ItemSource_Acumulado.Add(au);
                 }
@@ -104,7 +98,7 @@ namespace AppDAEMovil.ViewModels.Inventarios
                 ObservableCollection<zt_cat_productos> FicSinConteo = new ObservableCollection<zt_cat_productos>();
                 ObservableCollection<zt_cat_productos> FicConConteo = new ObservableCollection<zt_cat_productos>();
 
-                foreach (zt_cat_productos au in await FicInterfaceSKULista.FicMetGetSKUList(FicSourceZt_Inventarios.idSKU))
+                foreach (zt_cat_productos au in await FicInterfaceSKULista.FicMetGetSKUList())
                 {
                     _FicSfDataGrid_ItemSource_Acumulado.Add(au);
                    
@@ -118,5 +112,16 @@ namespace AppDAEMovil.ViewModels.Inventarios
                 await new Page().DisplayAlert("ALERTA", e.Message.ToString(), "OK");
             }
         }
+
+
+        #region  INotifyPropertyChanged
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void RaisePropertyChanged([CallerMemberName]string propertyName = "")
+        {
+            var handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new PropertyChangedEventArgs(propertyName));
+        }
+        #endregion
     }
 }

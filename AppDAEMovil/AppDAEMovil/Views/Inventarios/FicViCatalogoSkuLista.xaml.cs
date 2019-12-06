@@ -14,15 +14,28 @@ namespace AppDAEMovil.Views.Inventarios
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FicViCatalogoSkuLista : ContentPage
     {
+        private object FicNavigationContext { get; set; }
         public FicViCatalogoSkuLista()
         {
-            InitializeComponent();
-            BindingContext = App.FicViewModelDependencyInjection.FicVmCatalogoSkuLista;
-
            
+            
+            
+            BindingContext = App.FicViewModelDependencyInjection.FicVmCatalogoSkuLista;
+            
+
+        }
+        protected async override void OnAppearing()
+        {
+            var FicViewModel = BindingContext as FicVmCatalogoSkuLista;
+            if (FicViewModel != null)
+            {
+                FicViewModel.OnAppearing();
+
+            }
         }
 
-        private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
+
+            private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
         {
             try
             {
