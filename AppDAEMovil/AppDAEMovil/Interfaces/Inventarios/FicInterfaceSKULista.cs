@@ -11,5 +11,7 @@ namespace AppDAEMovil.Interfaces.Inventarios
     public interface FicInterfaceSKULista
     {
         Task<IList<zt_cat_productos>> FicMetGetSKUList();
+
+        Task<IList<zt_cat_UMedida>> FicMetGetUMedidaList();
     }
 }

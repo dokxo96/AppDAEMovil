@@ -8,18 +8,51 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using AppDAEMovil.Interfaces.Inventarios;
 using AppDAEMovil.Models;
+using AppJDiegoMovil.ViewModels.Base;
 using Xamarin.Forms;
 
 namespace AppDAEMovil.ViewModels.Inventarios
 {
-    public class FicVmCatalogoSkuLista : INotifyPropertyChanged
+    public class FicVmCatalogoSkuLista : FicViewModelBase
     {
+
+
         public object FicNavigationContext { get; set; }
 
         private FicInterfaceSKULista FicInterFaceSKULista;
+        public FicVmCatalogoSkuLista(FicInterfaceSKULista FicPaIFSrvSKULista)
+        {
+            FicInterFaceSKULista = FicPaIFSrvSKULista;
+        }
+
+
 
         private ObservableCollection<zt_cat_productos> _FicSfDataGrid_ItemSource_Acumulado;
+        public ObservableCollection<zt_cat_productos> FicSfDataGrid_ItemSource_Acumulado 
+        { 
+            get { return _FicSfDataGrid_ItemSource_Acumulado; }
+            set {
+                _FicSfDataGrid_ItemSource_Acumulado = value;
+                RaisePropertyChanged();
+            }
+        }
+
+
+
+
         private zt_cat_productos _FicSfDataGrid_SelectItem_Acumulado;
+        public zt_cat_productos SfDataGrid_SelectItem_Edificio
+        {
+            get { return _FicSfDataGrid_SelectItem_Acumulado; }
+            set
+            {
+                _FicSfDataGrid_SelectItem_Acumulado = value;
+                RaisePropertyChanged();
+            }
+        }
+
+
+
         private string _FicPickerFiltroSelected;
 
         public string FicPickerFiltroSelected
@@ -35,93 +68,23 @@ namespace AppDAEMovil.ViewModels.Inventarios
                 }
             }
         }
-        public zt_cat_productos FicSfDataGrid_SelectItem_Acumulado
+
+
+        public async override void OnAppearing(object navigationContext)
         {
-            get { return _FicSfDataGrid_SelectItem_Acumulado; }
-            set
+            base.OnAppearing(navigationContext);
+            var resultado = await FicInterFaceSKULista.FicMetGetSKUList();
+
+            FicSfDataGrid_ItemSource_Acumulado = new ObservableCollection<zt_cat_productos>();
+
+            foreach (var rest in resultado)
             {
-                if (value != null)
-                {
-                    _FicSfDataGrid_SelectItem_Acumulado = value;
-                    RaisePropertyChanged("FicSfDataGrid_SelectItem_Acumulado");
-                }
+                FicSfDataGrid_ItemSource_Acumulado.Add(rest);
             }
         }
-
-        public ObservableCollection<zt_cat_productos> FicSfDataGrid_ItemSource_Acumulado { get { return _FicSfDataGrid_ItemSource_Acumulado; } }
-        private ICommand _FicMetListaConteoICommand, _DoubleTappedCommandAction;
-
-
-
-        private FicInterfaceSKULista FicInterfaceSKULista;
-
-
-
-
-
-        public FicVmCatalogoSkuLista(FicInterfaceSKULista FicPaIFSrvSKULista)
-        {
-            this.FicInterfaceSKULista = FicPaIFSrvSKULista;
-        }
-
        
-     
 
-        public async void OnAppearing()
-        {
-            try
-            {
-                var FicSourceZt_Inventarios = FicNavigationContext as zt_cat_productos;
+        
 
-                _FicSfDataGrid_ItemSource_Acumulado = new ObservableCollection<zt_cat_productos>();
-
-                foreach (zt_cat_productos au in await FicInterfaceSKULista.FicMetGetSKUList())
-                {
-                    _FicSfDataGrid_ItemSource_Acumulado.Add(au);
-                }
-
-                RaisePropertyChanged("FicSfDataGrid_ItemSource_Acumulado");
-
-            }
-            catch (Exception e)
-            {
-                await new Page().DisplayAlert("ALERTA", e.Message.ToString(), "OK");
-            }
-        }//OnAppearing()
-
-        public async void FicMetFiltroSKU()
-        {
-            try
-            {
-                var FicSourceZt_Inventarios = FicNavigationContext as zt_cat_productos;
-                _FicSfDataGrid_ItemSource_Acumulado = new ObservableCollection<zt_cat_productos>();
-                ObservableCollection<zt_cat_productos> FicSinConteo = new ObservableCollection<zt_cat_productos>();
-                ObservableCollection<zt_cat_productos> FicConConteo = new ObservableCollection<zt_cat_productos>();
-
-                foreach (zt_cat_productos au in await FicInterfaceSKULista.FicMetGetSKUList())
-                {
-                    _FicSfDataGrid_ItemSource_Acumulado.Add(au);
-                   
-                }
-
-               
-                RaisePropertyChanged("FicSfDataGrid_ItemSource_Acumulado");
-            }
-            catch (Exception e)
-            {
-                await new Page().DisplayAlert("ALERTA", e.Message.ToString(), "OK");
-            }
-        }
-
-
-        #region  INotifyPropertyChanged
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void RaisePropertyChanged([CallerMemberName]string propertyName = "")
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new PropertyChangedEventArgs(propertyName));
-        }
-        #endregion
     }
 }

@@ -48,7 +48,7 @@
                         AutoGenerateColumns="False"
                         AllowSorting="False"
                         ItemsSource= "{Binding FicSfDataGrid_ItemSource_Acumulado}"
-                        SelectedItem="{Binding FicSfDataGrid_SelectItem_Acumulado}"
+                        SelectedItem="{Binding FicSfDataGrid_SelectItem_Acumulado,Mode=TwoWay}"
                         SelectionMode="Single"
                     >
                     <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">

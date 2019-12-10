@@ -2,6 +2,7 @@
 using Xamarin.Forms.Xaml;
 using AppDAEMovil.Views.Inventarios;
 using AppDAEMovil.ViewModels.Base;
+using AppJDiegoMovil.ViewModels.Base;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace AppDAEMovil
@@ -14,7 +15,11 @@ namespace AppDAEMovil
         {
             get { return _FicViewModelDependencyInjection = _FicViewModelDependencyInjection ?? new FicViewModelDependencyInjection(); }
         }
-
+        private static FicViewModelLocator ficVmLocator;
+        public static FicViewModelLocator FicMetLocator
+        {
+            get { return ficVmLocator = ficVmLocator ?? new FicViewModelLocator(); }
+        }
         //FIC: Metodo Principal
         public App()
         {

@@ -1,4 +1,5 @@
-﻿using AppDAEMovil.ViewModels.Inventarios;
+﻿using AppDAEMovil.Services.Inventarios;
+using AppDAEMovil.ViewModels.Inventarios;
 using Syncfusion.SfDataGrid.XForms;
 using System;
 using System.Collections.Generic;
@@ -15,13 +16,15 @@ namespace AppDAEMovil.Views.Inventarios
     public partial class FicViCatalogoSkuLista : ContentPage
     {
         private object FicNavigationContext { get; set; }
+        FicSrvInventarioSKUList serv { get; set; }
         public FicViCatalogoSkuLista()
         {
-           
-            
-            
-            BindingContext = App.FicViewModelDependencyInjection.FicVmCatalogoSkuLista;
-            
+
+
+
+            BindingContext = App.FicMetLocator.FicVmCatalogoSkuLista;
+            FicNavigationContext = null;
+            serv = new FicSrvInventarioSKUList();
 
         }
         protected async override void OnAppearing()
@@ -29,7 +32,7 @@ namespace AppDAEMovil.Views.Inventarios
             var FicViewModel = BindingContext as FicVmCatalogoSkuLista;
             if (FicViewModel != null)
             {
-                FicViewModel.OnAppearing();
+                FicViewModel.OnAppearing(FicNavigationContext);
 
             }
         }

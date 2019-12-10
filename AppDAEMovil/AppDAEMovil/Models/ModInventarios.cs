@@ -25,6 +25,22 @@ namespace AppDAEMovil.Models
         public string Borrado { get; set; }
 
     }
+
+    public class zt_cat_UMedida
+    {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public Int16 IdUnidadMedida { get; set; }
+
+        public String DesUMdedida { get; set; }
+        
+        public DateTime FechaReg { get; set; } = DateTime.Now;
+        public String UsuarioReg { get; set; }
+        public DateTime FechaUltMod { get; set; } = DateTime.Now;
+        public String UsuarioMod { get; set; }
+        public char Activo { get; set; } 
+        public bool Borrado { get; set; } 
+    }
+
     public class zt_inventarios_acumulados
     {
         public int IdInventario { get; set; }
